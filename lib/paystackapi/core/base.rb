@@ -11,4 +11,5 @@ module API
 	RECIPIENT_PATH = "/transferrecipient"
 	TRANSFER_PATH = "/transfer"
 	SETTLEMENT_PATH = "/settlement"
+	RESOLVE_BVN_PATH = '/bank/resolve_bvn'
 end

@@ -7,6 +7,7 @@ require 'paystackapi/core/otp.rb'
 require 'paystackapi/core/plan.rb'
 require 'paystackapi/core/transfer.rb'
 require 'paystackapi/core/subscription.rb'
+require 'paystackapi/core/bvn.rb'
 require 'httparty'
 require 'dotenv'
 
@@ -98,6 +99,11 @@ module Paystackapi
 	class PaystackBank
 		def self.list_banks
 			Bank.banks
+		end
+	end
+	class PaystackVerification
+		def self.resolve_bvn(body)
+			Verification.resolve_bvn(body)
 		end
 	end
 end
